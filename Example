@@ -1,0 +1,7 @@
+# Track an event
+curl -X POST http://localhost:4700/track \
+  -H "Content-Type: application/json" \
+  -d '{"id":"","event_type":"login","user_id":"user123","timestamp":"","metadata":{}}'
+
+# Get metrics
+curl http://localhost:4700/metrics
